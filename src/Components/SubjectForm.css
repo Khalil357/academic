@@ -1,0 +1,21 @@
+.subject-form {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    max-width: 400px; /* Optional: set a max width for the form */
+    margin: 0 auto; /* Center the form */
+}
+
+.subject-form div {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+.subject-form label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Optional: make the label bold */
+}
+
+.subject-form input {
+    padding: 10px; /* Add some padding for better appearance */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+}
