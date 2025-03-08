@@ -1,21 +1,106 @@
+/* SubjectForm.css */
 .subject-form {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    max-width: 400px; /* Optional: set a max width for the form */
+    flex-direction: column;
+    max-width: 1000px; /* Wider to accommodate the table */
     margin: 0 auto; /* Center the form */
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Use a clean font */
 }
 
-.subject-form div {
-    margin-bottom: 15px; /* Space between input fields */
+.subject-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray for the heading */
 }
 
-.subject-form label {
-    margin-bottom: 5px; /* Space between label and input */
-    font-weight: bold; /* Optional: make the label bold */
+.subject-form table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures rounded corners are visible */
 }
 
-.subject-form input {
-    padding: 10px; /* Add some padding for better appearance */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 4px; /* Rounded corners */
+.subject-form th,
+.subject-form td {
+    padding: 12px 15px; /* Comfortable padding */
+    text-align: left;
+}
+
+.subject-form th {
+    background-color: #007bff; /* Blue header background */
+    color: white; /* White text for headers */
+    font-weight: bold;
+}
+
+.subject-form tr {
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+}
+
+.subject-form tr:last-child {
+    border-bottom: none; /* Remove border for the last row */
+}
+
+.subject-form tr:hover {
+    background-color: #f9f9f9; /* Light hover effect for rows */
+}
+
+.subject-form input,
+.subject-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+.subject-form input:focus,
+.subject-form select:focus {
+    border-color: #007bff; /* Highlight input/select on focus */
+    outline: none; /* Remove default outline */
+}
+
+.subject-form button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.subject-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.subject-form button[type="button"] {
+    background-color: #6c757d; /* Gray for secondary buttons */
+}
+
+.subject-form button[type="button"]:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+.subject-form .actions {
+    display: flex;
+    gap: 5px; /* Space between buttons */
+}
+
+.subject-form p {
+    text-align: center;
+    color: #28a745; /* Green for success message */
+    margin-top: 10px;
+}
+
+.subject-form h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333; /* Dark gray for GPA display */
 }
